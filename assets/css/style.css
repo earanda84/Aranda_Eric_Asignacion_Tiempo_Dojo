@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.modal {
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    left: 45vw;
+    top: 50px;
+    padding: 20px 50px;
+    z-index: 1;
+    border: solid;
+    border-radius: 10px;
+    gap: 25px;
+}
+
+.modal>button {
+    padding: 5px 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header> :nth-child(2) {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}
+
+nav {
+    box-sizing: border-box;
+    align-self: center;
+    display: flex;
+    border-bottom: solid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 20px 0 20px 0px;
+}
+
+nav> :nth-child(1) {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav> :nth-child(2) {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+nav>:nth-child(3) {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+main {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 30px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+main>.card {
+    background-color: lightgray;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.card-header>h3 {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card-body img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+.card-body p {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card-footer > :nth-child(1){
+    color: red;
+    font-weight: bolder;
+}
+
+.card-footer > :nth-child(2){
+    color: blue;
+    font-weight: bolder;
+}
+
+.cookie {
+    box-sizing: border-box;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1;
+    width: 70vw;
+    align-self: center;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+.cookie>:nth-child(1) {
+    width: 70px;
+    height: 70px;
+}
+
+.cookie> :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cookie> :nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    background-color: rgb(100, 170, 194);
+    padding: 10px 30px;
+    border: solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

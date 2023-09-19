@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página del clima DojoWeather">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Pangolin&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div id="container">
+        <!-- MODAL -->
+        <div id="modal" class="hidden">
+            <div class="modal-header">
+                <h3>This page says</h3>
+            </div>
+            <div class="modal-body">
+                <p>Loading weather report...</p>
+            </div>
+            <button onclick="hiddenModal()">OK</button>
+        </div>
+        <!-- HEADER -->
+        <header>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li><a onclick="showModal(this)" href="#">Burbank</a></li>
+                <li><a onclick="showModal(this)" href="#">Chicago</a></li>
+                <li><a onclick="showModal(this)" href="#">Dallas</a></li>
+            </ul>
+        </header>
+        <!-- NAVIGATION MENU -->
+        <nav>
+            <h2>San Jose</h2>
+            <label for="temperature">show temperature in </label>
+            <select name="temperature" onchange="changeTemperature(this)">
+                <!-- <option value="">Select</option> -->
+                <option value="celsius">°C</option>
+                <option value="kelvin">K</option>
+                <option value="fahrenheit">F</option>
+            </select>
+        </nav>
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- MAIN CARDS -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Today</h3>
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/some_rain.png" alt="Cloud rain img">
+                    <p>some rain</p>
+                </div>
+                <div class="card-footer">
+                    <p class="degree">24°</p>
+                    <p class="degree">18°</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Tomorrow</h3>
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/some_sun.png" alt="Sun img">
+                    <p>some sun</p>
+                </div>
+                <div class="card-footer">
+                    <p class="degree">27°</p>
+                    <p class="degree">19°</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Friday</h3>
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/some_clouds.png" alt="Cloud img">
+                    <p>some clouds</p>
+                </div>
+                <div class="card-footer">
+                    <p class="degree">21°</p>
+                    <p class="degree">16°</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Saturday</h3>
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/some_sun.png" alt="Sun img">
+                    <p>some sun</p>
+                </div>
+                <div class="card-footer">
+                    <p class="degree">26°</p>
+                    <p class="degree">21°</p>
+                </div>
+            </div>
+        </main>
+        <div class="cookie">
+            <img src="assets/img/cookie.png" alt="Cookie img">
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analise our traffic. <span>Read more...</span></p>
+            </div>
+            <button class="btn-cookie">I Accept</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
